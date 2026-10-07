@@ -1,0 +1,1 @@
+document.addEventListener('pointerdown',e=>{if(e.pointerType==='mouse'&&e.button!==0)return;const x=document.createElement('span');x.className='click-ripple';x.style.left=e.clientX+'px';x.style.top=e.clientY+'px';const s=80+Math.random()*60;x.style.width=s+'px';x.style.height=s+'px';document.body.appendChild(x);setTimeout(()=>x.remove(),850)});
